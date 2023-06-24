@@ -1,0 +1,146 @@
+---
+export interface Props {
+	href: string;
+	img: string;
+	nombre: string;
+	precioAlto: string;
+	precioNormal: string;	
+}
+const { href,img,nombre,precioAlto,precioNormal } = Astro.props;
+---
+<div class="content-cards">
+	<ul>
+<li class="link-card">
+	<a href={href} >
+		<div class="centrar-contenido-vertical">
+			<div style="width: 100%; display:flex; align-items: center; justify-content: center; background-color: black;color:aliceblue">
+				<img src={img} alt="" style="width: 100%"> 
+			</div>
+			<div class="nombre-producto">
+				{nombre}
+			</div>
+			<div class="precio-alto">
+				Antes = ${precioAlto}
+			</div>
+			<div class="precio-normal">
+				${precioNormal}
+			</div>
+			<div class="div-ver-detalles">
+				Ver detalles &nbsp;
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+					<path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+				</svg>
+			</div>
+		</div>
+	</a>
+</li>
+</ul>
+<br/>
+</div>
+<style>
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	.centrar-contenido-vertical{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.nombre-producto{
+		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 28px;
+		text-decoration: none solid rgb(0, 0, 0);
+		text-align: left;
+		word-spacing: 0px;
+		
+	}
+	.precio-alto{
+		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 18px;
+		text-decoration: line-through solid rgb(191, 194, 202) 1px;
+		color:  #414247;
+		word-spacing: 0px;
+	}
+	.precio-normal{
+		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		font-size: 22px;
+		font-weight: 800;
+		line-height: 20px;
+		text-decoration: none solid rgb(34, 197, 94);
+		word-spacing: 0px;
+		margin-top: 5px;
+		color: #427c7a;
+	}
+	.div-ver-detalles{
+		width: 100%;
+		background-color:  #3b5f31;
+		color:  #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		font-family: Arial;
+		font-size: 18px;
+		line-height: 28px;
+		text-decoration: none solid rgb(255, 255, 255);
+		text-align: center;
+		word-spacing: 0px;
+	}
+	.link-card {
+		max-width: 290px;
+		display: flex;
+		background-color: white;
+		background-image: none;
+		background-size: 400%;
+		border-radius: 0.3rem;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+	}
+
+	.link-card > a {
+		width: 100%;
+		text-decoration: none;
+		line-height: 1.2;
+		padding: 1rem 1.2rem;
+		border-radius: 0.2rem;
+		color: #111;
+		background-color: white;
+		opacity: 0.8;
+	}
+	h2 {
+		margin: 0;
+		font-size: 1.2rem;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+	p {
+		margin-top: 0.2rem;
+		margin-bottom: 0;
+		color: #444;
+	}
+	.link-card:is(:hover, :focus-within) {
+		background-position: 0;
+		background-image: var(--accent-gradient);
+	}
+	.link-card:is(:hover, :focus-within) h2 {
+		color: rgb(var(--accent));
+	}
+	@media (max-width: 600px) {
+        .content-cards{
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+    }
+</style>

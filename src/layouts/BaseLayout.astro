@@ -1,0 +1,60 @@
+---
+import '~/assets/styles/base.css';
+
+import MetaTags from '~/components/common/MetaTags.astro';
+import BasicScripts from '~/components/common/BasicScripts.astro';
+
+import { MetaSEO } from '~/types';
+import { SITE } from '~/config.mjs';
+
+export interface Props {
+  meta?: MetaSEO;
+}
+
+const { meta = {} } = Astro.props;
+const { language = 'es', textDirection = 'ltr' } = SITE;
+---
+
+<!DOCTYPE html>
+<html lang={language} dir={textDirection} class="2xl:text-[20px]">
+  <head>
+    <MetaTags {...meta} />
+  </head>
+
+  <body >
+    <div class="fondo"></div>
+    <slot />
+    <BasicScripts />
+    <style is:global>
+      img {
+        content-visibility: auto;
+      }
+      :root {
+          --accent: 85, 161, 158;
+          --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #3b5f31 20%, white 60%);
+        }
+        html {
+          font-family: system-ui, sans-serif;
+          background-image: url("../../public/background-imagen.svg");
+          background-color: #F6F6F6;
+        }
+        .fondo{
+          margin: 0;
+          padding: 0;
+          opacity: 0.9;
+          width: 100%;
+          height: 100%;
+          position: fixed; /* o position: absolute; */
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background-color: #FEFEFE;
+        }
+        code {
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+            Bitstream Vera Sans Mono, Courier New, monospace;
+        }
+      
+    </style>
+  </body>
+</html>

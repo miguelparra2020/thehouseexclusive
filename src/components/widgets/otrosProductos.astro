@@ -1,0 +1,154 @@
+---
+import Card from './Card.astro';
+const idDataSheet = import.meta.env.SECRET_IDDATASHEET_OFERTAS;
+const response = await fetch("https://docs.google.com/spreadsheets/d/"+idDataSheet+"/gviz/tq?tqx=out:json&gid=0");
+const data = await response.text();
+const newStr = data.slice(47, -2);
+const json_data = JSON.parse(newStr);
+const data_map = json_data.table.rows;
+
+const nuevoArreglo = data_map.map(elemento => {
+  return {
+    id: elemento.c[0].v,
+    nombre: elemento.c[1].v,
+    imagenInicial: elemento.c[2].v,
+    precioAlto: parseInt(elemento.c[3].v),
+    precioNormal: parseInt(elemento.c[4].v),
+  };
+});
+var opciones = { style: 'decimal', useGrouping: true };
+---
+
+<section>
+    <div class="max-w-6xl mx-auto px-2 sm:px-6 py-4 text-md ">
+        <div class="ofertas_titulo">
+            
+            <div class="ofertas_titulo1">
+                <a href="/categorias-productos">
+                <span class="ofertas_titulo1_1">Otros</span> 
+                </a> 
+                <a href="/categorias-productos">
+                <span class="ofertas_titulo1_2">Productos</span> 
+                </a>
+            </div>
+            
+            
+            <div class="ofertas_titulo2">
+                <a href="/categorias-productos">
+                Ver todos
+                </a>
+                <a href="/categorias-productos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+                </a>
+            </div>
+           
+        </div>
+        <div class="ofertas_lineas max-w-6xl">
+            <div class="ofertas_lineas_1">
+
+            </div>
+            <div class="ofertas_lineas_2">
+
+            </div>
+        </div>
+    </div>
+  <div class="div_flex_center">
+    <div class="div_flex_center max-w-4xl">
+        {
+            nuevoArreglo.map((product) => (
+                <Card
+                    href={`detalles/producto/${product.id}`}
+                    img={product.imagenInicial}
+                    nombre={(product.nombre).slice(0,22)+"..."}
+                    precioAlto={(product.precioAlto).toLocaleString('es-ES', opciones)}
+                    precioNormal={(product.precioNormal).toLocaleString('es-ES', opciones)}
+                />
+            ))   
+        }
+    </div>
+  </div>
+  <div class="w-full flex justify-center">
+    <div class="max-w-xs flex justify-center" style="display:flex; justify-content: center; max-w-2xl">
+              <a class="btn w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:shadow-orange-300 hover:bg-gray-100 duration-300 ..." href={'/categorias-productos'}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+                    <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+                  </svg>
+        &nbsp; Ver todos los productos &nbsp;<span class="animate-bounce">🚀</span> 
+        </a>
+      </div>
+    </div>
+</section>
+
+
+<style>
+    .div_flex_center{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ofertas_titulo{
+        display: flex;
+        flex-direction: row;
+    }
+    .ofertas_titulo1{
+        width: 50%;
+        text-align: left;
+    }
+    .ofertas_titulo1_1{
+        font-family: 'system-ui, sans-serif;';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #666666;
+    }
+    .ofertas_titulo1_2{
+        font-family: 'system-ui, sans-serif;';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 30px;
+        color: #4C864B;
+    }
+    .ofertas_titulo2{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-family: 'system-ui, sans-serif;';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #666666;
+    }
+    .ofertas_lineas{
+        height: 5vh;
+    }
+    .ofertas_lineas_1{
+        width: 30%;
+        height: 1.2vh;
+        background-color: #84844A;
+
+    }
+    .ofertas_lineas_2{
+        width: 100%;
+        height: 0.4vh;
+        background-color: #EDEDED;
+    }
+    @media (max-width: 600px) {
+        .ofertas_lineas_1{
+            width: 50%;
+        }
+    }
+
+
+</style>
+
+

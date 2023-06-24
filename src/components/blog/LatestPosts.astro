@@ -1,0 +1,30 @@
+---
+import Grid from '~/components/blog/Grid.astro';
+import Headline from '~/components/blog/Headline.astro';
+import { findLatestPosts } from '~/utils/blog';
+
+export interface Props {
+  title?: string;
+  allPostsText?: string;
+  allPostsLink?: string | URL;
+  information?: string;
+  postIds: string[];
+  count?: number;
+}
+
+const {
+  count = 1000,
+} = Astro.props;
+
+const posts = await findLatestPosts({ count });
+---
+
+<section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+  <Headline
+    subtitle="Encuentra todas nuestras publicaciones y todo lo que deseamos contarte sobre nuestra empresa, ¡muchas gracias por preferirnos!"
+  >
+    Nuestra empresa
+  </Headline>
+
+  <Grid posts={posts} />
+</section>

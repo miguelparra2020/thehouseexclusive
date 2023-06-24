@@ -1,0 +1,24 @@
+---
+const urlImg = import.meta.env.SECRET_ICONO_SRC;
+const altImg = import.meta.env.SECRET_ICONO_ALT;
+---
+
+<span class="self-center ml-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
+  <img src={urlImg} alt={altImg} class="logo" ></span
+>
+
+<style>
+  .logo{
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  @media only screen and (max-width: 768px) {
+    .logo{
+      width: 80px;
+      height: 80px;
+    }
+  }
+</style>
