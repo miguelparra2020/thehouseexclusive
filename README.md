@@ -143,7 +143,13 @@ Hay que recordar que este archivo debe estar importado en index.astro
 >SesionInicial/>
 
 
-#7
+-------------------------------------------------------------------------------------
+
+# 6
+
+### SesionInicial.astro
+
+### vamos a 👉 src\components\widgets\SesionInicial.astro
 
 #en el botón personalizar una prenda, se va a la ruta personalizar. 
 # Personalizar
