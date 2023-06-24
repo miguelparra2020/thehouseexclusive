@@ -6,7 +6,9 @@ const data = await response.text();
 const newStr = data.slice(47, -2);
 const json_data = JSON.parse(newStr);
 const data_map = json_data.table.rows;
+console.log("")
 console.log(data_map)
+console.log("")
 ---
 
 <section>
