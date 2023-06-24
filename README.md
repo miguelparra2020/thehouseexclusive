@@ -4,9 +4,11 @@
 
 # Empezando con el proyecto:
 
-### 1
+# 1
 
-#### Logo.astro
+# Logo.astro
+
+## vamos a src\components\Logo.astro
 
 #### En el servidor no está tomando estas variables de entorno, dejaremos este documento como guía
 
@@ -18,9 +20,14 @@ SRC="https://res.cloudinary.com/dqryrvrzh/image/upload/v1687313342/The%20House%2
 
 ALT="Logo de the house exclusive"
 
-#### busca el archivo logo.astro que está en la ubicación 👉
+-------------------------------------------------------------------------------------
 
-#2
+# 2
+
+# config.mjs
+
+
+
 
 #Antes de continuar también debemos configurar los datos de la página: 
 #entramos al archivo config.mjs está debajo de la carpeta utils
