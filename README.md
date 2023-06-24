@@ -9,7 +9,7 @@
 
 # Logo.astro
 
-## vamos a src\components\Logo.astro
+## vamos a 👉 src\components\Logo.astro
 
 #### En el servidor no está tomando estas variables de entorno, dejaremos este documento como guía
 
@@ -27,27 +27,33 @@ ALT="Logo de the house exclusive"
 
 # config.mjs
 
+## vamos a 👉 src\config.mjs
 
+>Antes de continuar también debemos configurar los datos de la página: 
 
+#### entramos al archivo config.mjs está debajo de la carpeta utils src\config.mjs
 
-#Antes de continuar también debemos configurar los datos de la página: 
-#entramos al archivo config.mjs está debajo de la carpeta utils
-#src\config.mjs
-#La imagen default va a ser igual para todos los comercios debemos cambiar:
+#### La imagen default va a ser igual para todos los comercios debemos cambiar 👇:
+
 # * name, origin, title, description, googleAnalyticsId, #googleSiteVerificationId.
-#Mira este archivo para sacar el ID de google analitycs: 
 
-#3
+# Mira este archivo para sacar el ID de google analitycs: 
+
+# 3
+
+# config.mjs
+
+## vamos a 👉 src\config.mjs
 
 #Debemos cambiar las palabras claves, (keywords) estas palabras estan un el #archivo MetaTags.astro
 #src\components\common\MetaTags.astro
 #Están casi al final aparece así 
 
-# {['sistemas auto organizados', 'sistemas #autoorganizados', 'Sistemas 
-# Autoorganizados', 'Sistemas AutoOrganizados', #'Sistemas Auto Organizados'].
-# map((keyword) => (
-# <meta name="keywords" content={keyword} />
-# ))}
+> {['sistemas auto organizados', 'sistemas #autoorganizados', 'Sistemas 
+> Autoorganizados', 'Sistemas AutoOrganizados', #'Sistemas Auto Organizados'].
+> map((keyword) => (
+> <meta name="keywords" content={keyword} />
+> ))}
 
 #Debemos cambiar las palabras que se parezcan al nombre de la empresa o que }#puedan llegar a buscar nuestra empresa
 
