@@ -1,15 +1,17 @@
 # se cre correo electrónico para The house Exclusive:
-# thehouseexclusive@gmail.com contraseña=House1234*
+### thehouseexclusive@gmail.com contraseña=House1234*
 
-# Con este mismo correo se creo una cuenta clooudinary para las imagenes
+### Con este mismo correo se creo una cuenta clooudinary para las imagenes
+
+-------------------------------------------------------------------------------------
 
 # Empezando con el proyecto:
 
 # 1
 
-# Logo.astro
+### Logo.astro
 
-## vamos a 👉 src\components\Logo.astro
+### vamos a 👉 src\components\Logo.astro
 
 #### En el servidor no está tomando estas variables de entorno, dejaremos este documento como guía
 
@@ -25,9 +27,9 @@ ALT="Logo de the house exclusive"
 
 # 2
 
-# config.mjs
+### config.mjs
 
-## vamos a 👉 src\config.mjs
+### vamos a 👉 src\config.mjs
 
 >Antes de continuar también debemos configurar los datos de la página: 
 
@@ -35,19 +37,19 @@ ALT="Logo de the house exclusive"
 
 #### La imagen default va a ser igual para todos los comercios debemos cambiar 👇:
 
-# * name, origin, title, description, googleAnalyticsId, #googleSiteVerificationId.
+### * name, origin, title, description, googleAnalyticsId, #googleSiteVerificationId.
 
-# Mira este archivo para sacar el ID de google analitycs: 
+### Mira este archivo para sacar el ID de google analitycs: 
 
 # 3
 
-# config.mjs
+### config.mjs
 
-## vamos a 👉 src\config.mjs
+### vamos a 👉 src\config.mjs
 
-#Debemos cambiar las palabras claves, (keywords) estas palabras estan un el #archivo MetaTags.astro
-#src\components\common\MetaTags.astro
-#Están casi al final aparece así 
+#### Debemos cambiar las palabras claves, (keywords) estas palabras estan un el archivo MetaTags.astro
+#### src\components\common\MetaTags.astro
+#### Están casi al final aparece así 
 
 > {['sistemas auto organizados', 'sistemas #autoorganizados', 'Sistemas 
 > Autoorganizados', 'Sistemas AutoOrganizados', #'Sistemas Auto Organizados'].
