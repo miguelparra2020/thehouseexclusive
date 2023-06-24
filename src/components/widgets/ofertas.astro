@@ -6,17 +6,7 @@ const data = await response.text();
 const newStr = data.slice(47, -2);
 const json_data = JSON.parse(newStr);
 const data_map = json_data.table.rows;
-
-const nuevoArreglo = data_map.map(elemento => {
-  return {
-    id: elemento.c[0].v,
-    nombre: elemento.c[1].v,
-    imagenInicial: elemento.c[2].v,
-    precioAlto: parseInt(elemento.c[3].v),
-    precioNormal: parseInt(elemento.c[4].v),
-  };
-});
-var opciones = { style: 'decimal', useGrouping: true };
+console.log(data_map)
 ---
 
 <section>
@@ -56,7 +46,7 @@ var opciones = { style: 'decimal', useGrouping: true };
         </div>
     </div>
     <div>
-        {
+        <!-- {
             nuevoArreglo.map((product) => (
                     <div>
                     {product.id}
@@ -70,7 +60,7 @@ var opciones = { style: 'decimal', useGrouping: true };
                     // precioAlto={(product.precioAlto).toLocaleString('es-ES', opciones)}
                     // precioNormal={(product.precioNormal).toLocaleString('es-ES', opciones)}
             ))   
-        }
+        } -->
 
     </div>
   <!-- <div class="div_flex_center">
