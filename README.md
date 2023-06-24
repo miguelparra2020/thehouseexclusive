@@ -81,14 +81,14 @@ Debemos cambiar las palabras que se parezcan al nombre de la empresa o que pueda
 
 >### por ejemplo en nuestro caso:
 ###   pages
-###   |   categorias-productos
-###       |   index.astro
-###       |   mujeres
-###           |   index.astro
-###     |   hombres
-###         |   index.astro
-###     |   ninos
-###         |   index.astro
+>###  categorias-productos
+>>###   index.astro
+>>###   mujeres
+>>>###      index.astro
+>>###   hombres
+>>>###     index.astro
+>>###   ninos
+>>>###     index.astro
 
 ### cada index representa la ruta, pero dicha ruta se llama o se enruta con el #nombre de la carpeta, respetando las carpetas superiores: ejemplo queremos ir a la ruta hombres: 👉 /categorias-productos/hombres
 
