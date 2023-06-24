@@ -1,6 +1,7 @@
 # se cre correo electrónico para The house Exclusive:
 # thehouseexclusive@gmail.com contraseña=House1234*
-# Url google sheet inventario https://docs.google.com/spreadsheets/d/1fDIPCJs4neVITGM_yTJPl-HNqNCGX9wqI9hVM9DLcbY/edit#gid=0
+
+# Con este mismo correo se creo una cuenta clooudinary para las imagenes
 
 # Empezando con el proyecto:
 
