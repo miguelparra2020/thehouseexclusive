@@ -3,11 +3,10 @@ publishDate: 2023-01-01T00:00:00Z
 title: Nuestros canales de comunicación 
 description: El documento que usted estimado lector tiene en su pantalla, es un proyecto destinado a realizar una revolución científica capaz de industrializar al país en un lapso máximo de 10 años.
 excerpt: El documento que usted estimado lector tiene en su pantalla, es un proyecto destinado a realizar una revolución científica capaz de industrializar al país en un lapso máximo de 10 años.
-image: ~/assets/images/revolucioncientificotecnologica.png
-category: socio-politicos-economicos
+image: https://res.cloudinary.com/dqryrvrzh/image/upload/v1687568559/The%20House%20Exclusive/Imagenes%20Quienes%20somos/Conoce_nuestra_empresa_4_bp4oz0.avif
+category: nuestra-empresa
 tags:
-  - lectura
-  - tematicalibre
+  - nosotros
 canonical: https://sistemasautoorganizados.com/revolucioncientificotecnologica
 ---
 >“No puede haber sabiduría sin compasión, lo que significa para mí, que la ciencia carece de valor si no va acompañada de una preocupación social”. Kapra

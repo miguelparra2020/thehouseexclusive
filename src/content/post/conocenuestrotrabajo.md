@@ -3,8 +3,8 @@ publishDate: 2023-02-01T00:00:00Z
 title: Conoce nuestro trabajo
 description: Nos esforzamos al máximo para brindar la mejor atención y cuidado a nuestros clientes. Diseñamos y creamos prendas que superan las expectativas de nuestros clientes, y su satisfacción nos llena de alegría.
 excerpt: Nos esforzamos al máximo para brindar la mejor atención y cuidado a nuestros clientes. Diseñamos y creamos prendas que superan las expectativas de nuestros clientes, y su satisfacción nos llena de alegría.
-image: https://res.cloudinary.com/dqryrvrzh/image/upload/v1687564079/The%20House%20Exclusive/Imagenes%20Quienes%20somos/Conoce_nuestra_empresa_3_s3nyxj.avif
-category: nuestra empresa
+image: https://res.cloudinary.com/dqryrvrzh/image/upload/v1687568804/The%20House%20Exclusive/Imagenes%20Quienes%20somos/Conoce_nuestra_empresa_5_tr5c0c.avif
+category: nuestra-empresa
 tags:
   - nosotros
 canonical: https://thehouseexclusive.com/conocenuestrotrabajo

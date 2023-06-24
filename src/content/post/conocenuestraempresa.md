@@ -4,7 +4,7 @@ title: Conoce nuestra empresa
 description: ¡Bienvenido a nuestra empresa! Descubre quiénes somos, dónde estamos y nuestros servicios. Brindamos productos de alta calidad y una experiencia excepcional. Con años de experiencia, buscamos la plena satisfacción de nuestros clientes. Explora nuestra amplia gama de servicios y productos de excelencia. ¡Ven!🚀
 excerpt: ¡Bienvenido a nuestra empresa! Descubre quiénes somos, dónde estamos y nuestros servicios. Brindamos productos de alta calidad y una experiencia excepcional. Con años de experiencia, buscamos la plena satisfacción de nuestros clientes. Explora nuestra amplia gama de servicios y productos de excelencia. ¡Ven!🚀
 image: https://res.cloudinary.com/dqryrvrzh/image/upload/v1687403814/The%20House%20Exclusive/Imagenes%20Quienes%20somos/Conoce_nuestra_empresa_2_yg23dr.avif
-category: nuestra empresa
+category: nuestra-empresa
 tags:
   - nosotros
 canonical: https://thehouseexclusive.com/conocenuestraempresa
