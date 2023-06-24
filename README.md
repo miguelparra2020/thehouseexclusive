@@ -41,6 +41,8 @@ ALT="Logo de the house exclusive"
 
 ### Mira este archivo para sacar el ID de google analitycs: 
 
+-------------------------------------------------------------------------------------
+
 # 3
 
 ### config.mjs
@@ -57,29 +59,38 @@ ALT="Logo de the house exclusive"
 > <meta name="keywords" content={keyword} />
 > ))}
 
-#Debemos cambiar las palabras que se parezcan al nombre de la empresa o que }#puedan llegar a buscar nuestra empresa
+Debemos cambiar las palabras que se parezcan al nombre de la empresa o que puedan llegar a buscar nuestra empresa
 
-#4
+-------------------------------------------------------------------------------------
 
-#Las categorías de la página se encuentran en el archivo data.js 👈 está debajo #del archivo config.mjs: 
-#src\data.js
+# 4
 
-#En este archivo debemos configurar las categorías del header y del footer
+### data.js
 
-#Para estas categorías se creo una carpeta categorias-productos en el area de #pages src\pages\categorias-productos allí debemos analizar las categorías que #tenemos y las carpetas que debemos crear, cada carpeta tiene un archivo index #que es el nombre de la carpeta la ruta que accede a el.
+### vamos a 👉 src\data.js
 
-#por ejemplo en nuestro caso:
-#   pages
-#   |   categorias-productos
-#       |   index.astro
-#       |   mujeres
-#           |   index.astro
-#       |   hombres
-#           |   index.astro
-#       |   ninos
-#           |   index.astro
+#### Las categorías de la página se encuentran en el archivo data.js 👈 está debajo del archivo config.mjs: en src\data.js
 
-# cada index representa la ruta, pero dicha ruta se llama o se enruta con el #nombre de la carpeta, respetando las carpetas superiores: ejemplo queremos ir a la ruta hombres: 👉 /categorias-productos/hombres
+### En este archivo debemos configurar las categorías del header y del footer
+
+### Para estas categorías se creo una carpeta categorias-productos en el area de #pages src\pages\categorias-productos 
+
+### allí debemos analizar las categorías que tenemos y las carpetas que debemos crear, 
+
+### cada carpeta tiene un archivo index.astro, que es el nombre de la carpeta la ruta que accede a él.
+
+>### por ejemplo en nuestro caso:
+###   pages
+###   |   categorias-productos
+###       |   index.astro
+###       |   mujeres
+###           |   index.astro
+###     |   hombres
+###         |   index.astro
+###     |   ninos
+###         |   index.astro
+
+### cada index representa la ruta, pero dicha ruta se llama o se enruta con el #nombre de la carpeta, respetando las carpetas superiores: ejemplo queremos ir a la ruta hombres: 👉 /categorias-productos/hombres
 
 #Debemos crear todas las rutas que tengamos en las categorías, ya es #dependiendo el comercio virtual al cual le hagamos la plantilla
 
