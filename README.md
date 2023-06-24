@@ -92,31 +92,56 @@ Debemos cambiar las palabras que se parezcan al nombre de la empresa o que pueda
 
 ### cada index representa la ruta, pero dicha ruta se llama o se enruta con el #nombre de la carpeta, respetando las carpetas superiores: ejemplo queremos ir a la ruta hombres: 👉 /categorias-productos/hombres
 
-#Debemos crear todas las rutas que tengamos en las categorías, ya es #dependiendo el comercio virtual al cual le hagamos la plantilla
+Debemos crear todas las rutas que tengamos en las categorías, ya es dependiendo el comercio virtual al cual le hagamos la plantilla
 
-#por ejemplo también tenemos nosotros, pero este apartado lo vamos a manejar #esde el blog, como si fuera posters, para que el usuario pueda incluir #documentación importante de su empresa o noticias.
-#esto está en la ruta: 👉 src\content\post
-#Podemos poner un articulo que diga, conoce nuestra empresa:
-#Otro que diga como hacemos nuestros productos
-#Como puedes personalizar su prenda.
-#entre otros
+>por ejemplo también tenemos nosotros, pero este apartado lo vamos a manejar desde el blog, como si fuera posters, para que el usuario pueda incluir documentación importante de su empresa o noticias.
 
-#En nuestro caso también tenemos las categorías Reels y fotos
-# Podemos incluilas en una capeta media, y debajo ambas cosas
+>esto está en la ruta: 👉 src\content\post Podemos poner un articulo que diga, conoce nuestra empresa: 
 
-#más abajo llamamos los archivos google sheet de cada ruta.
+>Otro que diga como hacemos nuestros productos
+
+>Como puedes personalizar su prenda.
+
+>entre otros
+
+#### En nuestro caso también tenemos las categorías Reels y fotos
+
+### Podemos incluilas en una capeta media, y debajo ambas cosas
+
+más abajo llamamos los archivos google sheet de cada ruta.
 
 
-#5
 
-#Nombre de la empresa en mayuscula 👇:
-SECRET_NOMBRE_EMPRESA_MAYUS="THE HOUSE EXCLUSIVE"
+-------------------------------------------------------------------------------------
 
-#6
+# 5
 
-#Esta es la google sheet enfocada en el carrusel, las imagenes cambiarán cada 5 #minutos pero solo muestra una a la vez, la url de este es
-#google sheet que muestra una sola imagen: https://docs.google.com/spreadsheets/d/1t06uf5PZtDZB7u1XpgI3THotkeoGClSJDyQXHyWpOxw/edit#gid=0
-SECRET_IDDATASHEET_CARRUSEL=1t06uf5PZtDZB7u1XpgI3THotkeoGClSJDyQXHyWpOxw
+### SesionInicial.astro
+
+### vamos a 👉 src\components\widgets\SesionInicial.astro
+
+### Nombre de la empresa en mayuscula 👇:
+
+> const nameCompany = "THE HOUSE EXCLUSIVE"
+
+
+### Esta es la google sheet enfocada en el carrusel, las imagenes cambiarán cada 5 #minutos pero solo muestra una a la vez, la url de este es
+### google sheet que muestra una sola imagen: https://docs.google.com/spreadsheets/d/1t06uf5PZtDZB7u1XpgI3THotkeoGClSJDyQXHyWpOxw/edit#gid=0
+
+IDDATASHEET_CARRUSEL = 1t06uf5PZtDZB7u1XpgI3THotkeoGClSJDyQXHyWpOxw
+
+Debemos utilizar "https://docs.google.com/spreadsheets/d/" + IDDATASHEET + /gviz/tq?tqx=out:json&gid=0
+
+queda como resultado 👇:
+
+> const response = await fetch("https://docs.google.com/spreadsheets/d/1t06uf5PZtDZB7u1XpgI3THotkeoGClSJDyQXHyWpOxw/gviz/tq?tqx=out:json&gid=0");
+
+Hay que recordar que este archivo debe estar importado en index.astro
+
+>import SesionInicial from '~/components/widgets/SesionInicial.astro';
+
+>SesionInicial/>
+
 
 #7
 

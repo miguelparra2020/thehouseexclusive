@@ -1,7 +1,7 @@
 ---
 import { SITE,  } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
-// import SesionInicial from '~/components/widgets/SesionInicial.astro';
+import SesionInicial from '~/components/widgets/SesionInicial.astro';
 import Ofertas from '~/components/widgets/ofertas.astro';
 import SesionCategorias from '~/components/widgets/SesionCategorias.astro';
 // import OtrosProductos from '~/components/widgets/otrosProductos.astro';
@@ -18,7 +18,7 @@ const meta = {
   <!-- El menú y los links de menú están en el archivo data.js este archivo está por fuera del src -->
 
   <!-- Sesión Inicial  allí está el tiulo y la foto carrusel ******* -->
-  <!-- <SesionInicial /> -->
+  <SesionInicial />
   <!-- Sesión Inicial ******************* -->
 <!-- La sesión de ofertas tiene 4 ofertas aletarorias cada 5 min desde google sheet -->
   <Ofertas />
