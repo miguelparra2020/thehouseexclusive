@@ -10,10 +10,15 @@
 
 #### En el servidor no está tomando estas variables de entorno, dejaremos este documento como guía
 
-#Icono de la página - Este icono fue almacenado en Cloudinary, se recomienda #sin fondo y 50*50 px 👇:
-PUBLIC_ICONO_SRC="https://res.cloudinary.com/dqryrvrzh/image/upload/v1687313342/The%20House%20Exclusive/Imagenes%20Carrusel/Lighthouse_Icon_Music_Studio_Logo_zgrujf.avif"
-#Descripción del icono 👇:
-PUBLIC_ICONO_ALT="Logo de the house exclusive"
+### Icono de la página - Este icono fue almacenado en Cloudinary, se recomienda #sin fondo y 65 * 65 px en escritorio y en celular 80 * 80 px : que la imagen si es cualquier tipo de extensión cambiarsela a lo ultimo a: .avif, en cloudinary podemos subirla de cualquier tipo  y solo copiamos la url que nos dan y le cambiamos manualmente a .avif para no hacerle una conversión 👇:
+
+SRC="https://res.cloudinary.com/dqryrvrzh/image/upload/v1687313342/The%20House%20Exclusive/Imagenes%20Carrusel/Lighthouse_Icon_Music_Studio_Logo_zgrujf.avif"
+
+### Descripción del icono 👇:
+
+ALT="Logo de the house exclusive"
+
+#### busca el archivo logo.astro que está en la ubicación 👉
 
 #2
 
