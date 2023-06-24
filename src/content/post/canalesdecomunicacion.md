@@ -3,7 +3,7 @@ publishDate: 2023-01-01T00:00:00Z
 title: Nuestros canales de comunicación 
 description: El documento que usted estimado lector tiene en su pantalla, es un proyecto destinado a realizar una revolución científica capaz de industrializar al país en un lapso máximo de 10 años.
 excerpt: El documento que usted estimado lector tiene en su pantalla, es un proyecto destinado a realizar una revolución científica capaz de industrializar al país en un lapso máximo de 10 años.
-image: https://res.cloudinary.com/dqryrvrzh/image/upload/v1687568559/The%20House%20Exclusive/Imagenes%20Quienes%20somos/Conoce_nuestra_empresa_4_bp4oz0.avif
+image: https://res.cloudinary.com/dqryrvrzh/image/upload/v1687568804/The%20House%20Exclusive/Imagenes%20Quienes%20somos/Conoce_nuestra_empresa_5_tr5c0c.avif
 category: nuestra-empresa
 tags:
   - nosotros

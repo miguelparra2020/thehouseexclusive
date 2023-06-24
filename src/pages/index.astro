@@ -2,7 +2,7 @@
 import { SITE,  } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 // import SesionInicial from '~/components/widgets/SesionInicial.astro';
-// import Ofertas from '~/components/widgets/ofertas.astro';
+import Ofertas from '~/components/widgets/ofertas.astro';
 import SesionCategorias from '~/components/widgets/SesionCategorias.astro';
 // import OtrosProductos from '~/components/widgets/otrosProductos.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
@@ -21,7 +21,7 @@ const meta = {
   <!-- <SesionInicial /> -->
   <!-- Sesión Inicial ******************* -->
 <!-- La sesión de ofertas tiene 4 ofertas aletarorias cada 5 min desde google sheet -->
-  <!-- <Ofertas /> -->
+  <Ofertas />
 <!-- La sesión de ofertas tiene 4 ofertas aletarorias cada 5 min desde google sheet -->
 <!-- Sesión de categorias ******************* -->
   <SesionCategorias/>
