@@ -23,6 +23,8 @@ SRC="https://res.cloudinary.com/dqryrvrzh/image/upload/v1687313342/The%20House%2
 
 ALT="Logo de the house exclusive"
 
+![Imagen Logo](https://res.cloudinary.com/dqryrvrzh/image/upload/v1687663585/The%20House%20Exclusive/Reame/logo_r49zvz.png)
+
 -------------------------------------------------------------------------------------
 
 # 2
@@ -110,7 +112,7 @@ Debemos crear todas las rutas que tengamos en las categorías, ya es dependiendo
 
 más abajo llamamos los archivos google sheet de cada ruta.
 
-
+![Imagen Categorias](https://res.cloudinary.com/dqryrvrzh/image/upload/v1687663738/The%20House%20Exclusive/Reame/categorias_sokvuu.png)
 
 -------------------------------------------------------------------------------------
 
@@ -142,6 +144,7 @@ Hay que recordar que este archivo debe estar importado en index.astro
 
 >SesionInicial/>
 
+![Imagen Sesion Inicial](https://res.cloudinary.com/dqryrvrzh/image/upload/v1687663808/The%20House%20Exclusive/Reame/Sesion_inicial_nzomvh.png)
 
 -------------------------------------------------------------------------------------
 
