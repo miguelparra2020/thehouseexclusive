@@ -210,6 +210,11 @@ queda como resultado 👇:
 
 En esta sesión dependemos de las categorias que tengamos en el menú inicial, aunque no siempre es necesario ponerlas todas las categorías sino las principales, lo aconsejable sería 2 o 3 categorias o máximo 6
 
+Para ello entre este archivo en el área interactiva --- js --- allí eh puesto una constante donde se añade la imagen, el alt de la imagen y el href donde llevaría la imagen. estas imagenes pongamolas de manera casi local, son imagenes muy estácticas. 
+
+en este archivo podemos modificar el style etc.
+
+![Imagen Nuestras Categorias](https://res.cloudinary.com/dqryrvrzh/image/upload/v1687667617/The%20House%20Exclusive/Reame/Sesion_categorias_hxuhss.png)
 
 
 
