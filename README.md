@@ -159,6 +159,8 @@ Hay que recordar que este archivo debe estar importado en index.astro
 >>    index.astro
 #### Esta área la terminaremos más adelante
 
+![Imagen boton](https://res.cloudinary.com/dqryrvrzh/image/upload/v1687663894/The%20House%20Exclusive/Reame/Boton_personalizar_un_prenda_kcbbfs.png)
+
 -------------------------------------------------------------------------------------
 
 # 7
@@ -193,6 +195,9 @@ queda como resultado 👇:
 
 
 ### Adicional tenemos un botón que llevará a todos los productos
+
+
+![Imagen Nuestros Productos](https://res.cloudinary.com/dqryrvrzh/image/upload/v1687663977/The%20House%20Exclusive/Reame/Nuestros_productos_idudk3.png)
 
 
 -------------------------------------------------------------------------------------
