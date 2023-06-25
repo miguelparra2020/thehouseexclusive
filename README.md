@@ -152,27 +152,53 @@ Hay que recordar que este archivo debe estar importado en index.astro
 ### vamos a 👉 src\components\widgets\SesionInicial.astro
 
 #en el botón personalizar una prenda, se va a la ruta personalizar. 
-# Personalizar
-# |     index.astro
-# Esta área la terminaremos más adelante
+> Personalizar
+>>    index.astro
+#### Esta área la terminaremos más adelante
 
-#8
+-------------------------------------------------------------------------------------
 
-#Ofertas
+# 7
 
-#Luego sigue el área de  nuestros productos, el titulo y ver todos nos llevará #a todos los productos. /pages/categorias-productos/index.astro
-#Esta área la tenemos en el componente 👉src\components\widgets\ofertas.astro
+### ofertas.astro
 
-#Esta es la google sheet que maneja las ofertas de 3 productos de muestra que #cambian cada 5 minutos
-#Google sheet de 3 productos:https://docs.google.com/spreadsheets/d/1E_Kmq8JkFrKUlWnWdGV9ysuUJbcwalTQ5Vvp1cI1Ebc/edit?usp=sharing
-#ID de Google sheet de 3 productos 👇
-SECRET_IDDATASHEET_OFERTAS=1E_Kmq8JkFrKUlWnWdGV9ysuUJbcwalTQ5Vvp1cI1Ebc
+### vamos a 👉 src\components\widgets\ofertas.astro
 
-#Adicional tenemos un botón que llevará a todos los productos
+### Luego sigue el área de  nuestros productos, el titulo y ver todos nos llevará 
+### a todos los productos. /pages/categorias-productos/index.astro
+### Esta área la tenemos en el componente 👉src\components\widgets\ofertas.astro
 
-# 9
+En esta área pintamos los productos en una card que tenemos la card en card.astro pero ya está echo el diseño
 
-#Seguimos con el área de categorías
+### si se quiere cambiar el diseño de la card vamos a 👉 src\components\widgets\Card.astro
+
+Lo importante en esta área es la información que vamos a pintar 👇
+### Esta es la google sheet que maneja las ofertas de 3 productos de muestra que #cambian cada 5 minutos
+### Google sheet de 3 productos:https://docs.google.com/spreadsheets/d/1E_Kmq8JkFrKUlWnWdGV9ysuUJbcwalTQ5Vvp1cI1Ebc/edit?usp=sharing
+### ID de Google sheet de 3 productos 👇
+### IDDATASHEET= 1E_Kmq8JkFrKUlWnWdGV9ysuUJbcwalTQ5Vvp1cI1Ebc
+
+Al tener la Id de la sheet usamos la misma forma de leer Json de google: 
+
+IDDATASHEET = 1E_Kmq8JkFrKUlWnWdGV9ysuUJbcwalTQ5Vvp1cI1Ebc
+
+Debemos utilizar "https://docs.google.com/spreadsheets/d/" + IDDATASHEET +" /gviz/tq?tqx=out:json&gid=0"
+
+queda como resultado 👇:
+
+> const response = await fetch("https://docs.google.com/spreadsheets/d/1E_Kmq8JkFrKUlWnWdGV9ysuUJbcwalTQ5Vvp1cI1Ebc/gviz/tq?tqx=out:json&gid=0");
+
+
+### Adicional tenemos un botón que llevará a todos los productos
+
+
+-------------------------------------------------------------------------------------
+
+# 8
+
+### ofertas.astro
+
+### vamos a 👉 src\components\widgets\ofertas.astro
 
 
 
