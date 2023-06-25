@@ -1,4 +1,21 @@
 ---
+const categorias =[
+    {
+        'src':'https://res.cloudinary.com/dqryrvrzh/image/upload/v1687316567/The%20House%20Exclusive/Imagenes%20Categorias/Todos_los_productos_dgnm1a.avif',
+        'alt':'Imagen categoria todos los productos',
+        'href':'',
+    },
+    {
+        'src':'https://res.cloudinary.com/dqryrvrzh/image/upload/v1687316567/The%20House%20Exclusive/Imagenes%20Categorias/Catogoria_Mujeres_tw6ioz.avif',
+        'alt':'Imagen categoria mujeres',
+        'href':'',
+    },
+    {
+        'src':'https://res.cloudinary.com/dqryrvrzh/image/upload/v1687316567/The%20House%20Exclusive/Imagenes%20Categorias/Categoria_Hombres_trz7gk.avif',
+        'alt':'Imagen categoria mujeres',
+        'href':'',
+    },
+]
 ---
 
 <section>
@@ -39,36 +56,21 @@
     </div>
     <!-- Sesión de las imagenes de las categorias -->
     <div class="max-w-6xl mx-auto px-2 sm:px-6 py-4 text-md contenedor_imagenes_categorias">
-        <a href="">
-            <div class="div_imagen_categoria bg-gray-500 shadow-lg shadow-gray-500/50 hover:shadow-orange-300 rounded-md">
-                <img 
-                    src="https://res.cloudinary.com/dqryrvrzh/image/upload/v1687316567/The%20House%20Exclusive/Imagenes%20Categorias/Todos_los_productos_dgnm1a.avif" alt="Imagen categoria todos los productos"
-                    loading="lazy" 
-                    decoding="auto"
-                    class="imagen_categoria" 
-                /> 
-            </div>
-        </a>
-        <a href="">
-            <div class="div_imagen_categoria bg-gray-500 shadow-lg shadow-gray-500/50 hover:shadow-orange-300 rounded-md">
-                <img 
-                src="https://res.cloudinary.com/dqryrvrzh/image/upload/v1687316567/The%20House%20Exclusive/Imagenes%20Categorias/Catogoria_Mujeres_tw6ioz.avif" alt="Imagen categoria todos los productos"
-                loading="lazy" 
-                decoding="auto"
-                class="imagen_categoria" 
-                />
-            </div>
-        </a>
-        <a href="">
-            <div class="div_imagen_categoria bg-gray-500 shadow-lg shadow-gray-500/50 hover:shadow-orange-300 rounded-md">
-                <img 
-                src="https://res.cloudinary.com/dqryrvrzh/image/upload/v1687316567/The%20House%20Exclusive/Imagenes%20Categorias/Categoria_Hombres_trz7gk.avif" alt="Imagen categoria todos los productos"
-                loading="lazy" 
-                decoding="auto"
-                class="imagen_categoria" 
-                />
-            </div>
-        </a>
+        {
+            categorias.map((item) => (
+                <a href={item.href} >
+                    <div class="div_imagen_categoria bg-gray-500 shadow-lg shadow-gray-500/50 hover:shadow-orange-300 rounded-md">
+                        <img 
+                            src={item.src} 
+                            alt={item.alt} 
+                            loading="lazy" 
+                            decoding="auto"
+                            class="imagen_categoria" 
+                        />
+                    </div>
+                </a>
+            ))            
+        }     
     </div>
 </section>
 

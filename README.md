@@ -204,9 +204,13 @@ queda como resultado 👇:
 
 # 8
 
-### ofertas.astro
+### SesionCategorias.astro
 
-### vamos a 👉 src\components\widgets\ofertas.astro
+### vamos a 👉 src\components\widgets\SesionCategorias.astro
+
+En esta sesión dependemos de las categorias que tengamos en el menú inicial, aunque no siempre es necesario ponerlas todas las categorías sino las principales, lo aconsejable sería 2 o 3 categorias o máximo 6
+
+
 
 
 
